@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  /* does not work on safari and microsoft edge */
+  /* scroll-behavior: smooth; */
+}
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #1b1a1a;
+  line-height: 1;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 6.4rem;
+}
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+/* .grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+} */
+.grid-center-vertical {
+  align-items: center;
+}
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+.heading-primary,
+.heading-seconary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 1.05;
+}
+.heading-secondary {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 9.2rem;
+}
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+.subheading {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(209, 98, 6);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.button,
+.button:link,
+.button:visited {
+  display: inline-block;
+
+  font-size: 1.6rem;
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 1.2rem;
+  transition: all 1s;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+.button-one:link,
+.button-one:visited {
+  background-color: rgb(255, 115, 0);
+}
+.button-one:hover,
+.button-one:active {
+  background-color: rgb(209, 101, 13);
+}
+.button-two:link,
+.button-two:visited {
+  background-color: white;
+  color: black;
+}
+.button-two:hover,
+.button-two:active {
+  background-color: rgb(249, 227, 189);
+  color: black;
+  /* border: 1px solid black; */
+  box-shadow: inset 0 0 0 3px white;
+}
+
+.button-form {
+  background-color: rgb(53, 6, 6);
+  color: white;
+  align-self: end;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: rgb(248, 148, 8);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+.link:hover,
+.link:active {
+  color: rgb(188, 104, 8);
+  border-bottom: 1px solid transparent;
+}
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.list-item {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
+}
+.list-icon {
+  color: orange;
+  width: 3rem;
+  height: 3rem;
+}
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgb(255, 136, 0);
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
